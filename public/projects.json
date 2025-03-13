@@ -1,0 +1,77 @@
+[
+    {
+        "id": 1,
+        "name": "Rokto Bondhon",
+        "description": "A user-friendly Blood Donation Application built with the MERN stack. The platform connects donors with those in need, ensuring a smooth and efficient blood donation process.",
+        "techStack": [
+            "React",
+            "Firebase",
+            "Nodejs",
+            "Expressjs",
+            "Stripe",
+            "MongoDB"
+        ],
+        "liveProjectLink": "https://rokto-bondhon-c1f9c.web.app/",
+        "githubRepository": "https://github.com/surayaahlam/roktoBondhon-blood-donation-application-a12-ph-client",
+        "image": "https://i.ibb.co.com/3YYZTCKC/image.png",
+        "challenges": [
+            "Implementing role-based access control with different permissions.",
+            "Managing real-time notifications efficiently for blood donation requests.",
+            "Ensuring secure authentication and data protection."
+        ],
+        "futurePlans": [
+            "Enhancing the donor search functionality with AI-based recommendations.",
+            "Adding multilingual support to make the platform accessible to a wider audience.",
+            "Implementing an AI-based chatbot for quick assistance."
+        ]
+    },
+    {
+        "id": 2,
+        "name": "RaceConnect",
+        "description": "A comprehensive platform for organizing and managing marathon events. It connects event organizers and participants, allowing streamlined registration, event creation, and dashboard management.",
+        "techStack": [
+            "React",
+            "Firebase",
+            "Tailwind CSS",
+            "Nodejs",
+            "MongoDB"
+        ],
+        "liveProjectLink": "https://race-connect-25d5a.firebaseapp.com/",
+        "githubRepository": "https://github.com/surayaahlam/raceconnect-marathon-management-a11-ph-client",
+        "image": "https://i.ibb.co.com/wFdqYfvH/image.png",
+        "challenges": [
+            "Implementing real-time countdown timer synchronization.",
+            "Managing JWT-based authentication securely.",
+            "Handling large datasets for marathon registrations."
+        ],
+        "futurePlans": [
+            "Integrating live tracking for marathon participants.",
+            "Adding a forum section for runners to share their experiences.",
+            "Optimizing the platform for global marathon events."
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Crowdcube",
+        "description": "A dynamic crowdfunding platform designed to help individuals, startups, and creative thinkers turn their ideas into reality by connecting them with supporters.",
+        "techStack": [
+            "React",
+            "Tailwind CSS",
+            "DaisyUI",
+            "MongoDB"
+        ],
+        "liveProjectLink": "https://crowdcube-ph-b10a10-surayaahlam.netlify.app/",
+        "githubRepository": "https://github.com/surayaahlam/crowdcube-crowd-funding-a10-ph-client",
+        "image": "https://i.ibb.co.com/YBy28hxn/image.png",
+        "challenges": [
+            "Ensuring secure and smooth transactions for donations.",
+            "Managing real-time campaign updates dynamically.",
+            "Implementing a responsive theme toggle feature."
+        ],
+        "futurePlans": [
+            "Introducing social media sharing options for campaigns.",
+            "Adding a reward-based system for donors.",
+            "Expanding campaign categories for more diverse funding opportunities."
+        ]
+    }
+]

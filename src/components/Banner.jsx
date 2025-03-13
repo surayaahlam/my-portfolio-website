@@ -27,7 +27,7 @@ const Banner = () => {
                             <div className="flex flex-col gap-[2px]">
                                 <h3 className="text-3xl font-semibold text-center lg:text-left">Hello, It's Me</h3>
                                 <h2 className="text-[50px] font-bold text-center lg:text-left">Suraya Ahlam</h2>
-                                <h3 className="text-3xl font-semibold text-center lg:text-left">
+                                <h3 className="text-4xl font-semibold text-center lg:text-left">
                                     And I'm {' '}
                                     <span className="text-primary">
                                         <Typewriter

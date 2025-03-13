@@ -1,15 +1,15 @@
-import AboutMe from "../components/AboutMe";
-import Banner from "../components/Banner";
+import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import Skills from "../components/Skills";
+import Footer from "../components/Footer";
 
 const MainLayout = () => {
     return (
         <div className="font-poppins text-white">
             <Navbar></Navbar>
-            <Banner></Banner>
-            <AboutMe></AboutMe>
-            <Skills></Skills>
+            <div className="min-h-[calc(100vh-191px)]">
+                <Outlet></Outlet>
+            </div>
+            <Footer></Footer>
         </div>
     );
 };

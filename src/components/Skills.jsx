@@ -14,10 +14,10 @@ const skills = [
 
 const Skills = () => {
     return (
-        <section className="container mx-auto py-16 lg:py-20">
+        <section id="skills" className="container mx-auto py-16 lg:py-20">
             <div className="w-11/12 md:w-10/12 lg:w-9/12 mx-auto">
-                <h2 className="text-[42px] font-extrabold text-[rgb(12,192,223)] text-center mb-8">
-                    My Stack
+                <h2 className="text-[42px] font-extrabold text-white text-center mb-8">
+                    My <span className="text-primary">Stack</span>
                 </h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                     {skills.map((skill, index) => (

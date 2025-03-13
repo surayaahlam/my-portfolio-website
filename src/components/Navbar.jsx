@@ -6,11 +6,14 @@ const Navbar = () => {
     const links = <>
         <NavLink
             to="/"
-            className={({ isActive }) => `text-[15px] ${isActive ? `font-bold text-primary` : 'hover:scale-105'}`}>Home</NavLink>
-        <NavLink
-            to="/campaigns"
-            className={({ isActive }) => `text-[15px] ${isActive ? `font-bold text-primary` : 'hover:scale-105'}`}>All Campaign</NavLink>
-
+            className={({ isActive }) => `text-[15px] ${isActive ? "font-bold text-primary" : "hover:scale-110"}`}
+        >
+            Home
+        </NavLink>
+        <a href="#about" className="text-[15px] hover:scale-110">About Me</a>
+        <a href="#skills" className="text-[15px] hover:scale-110">Skills</a>
+        <a href="#projects" className="text-[15px] hover:scale-110">Projects</a>
+        <a href="#contact" className="text-[15px] hover:scale-110">Contact Me</a>
     </>
 
     return (
