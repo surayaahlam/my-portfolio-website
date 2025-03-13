@@ -23,7 +23,7 @@ const Banner = () => {
                                 <div className="w-[350px] rounded-2xl h-[350px] bg-primary"></div>
                             </div>
                         </div>
-                        <div className="lg:w-[55%]">
+                        <div className="flex flex-col items-center lg:items-start lg:w-[55%]">
                             <div className="flex flex-col gap-[2px]">
                                 <h3 className="text-3xl font-semibold text-center lg:text-left">Hello, It's Me</h3>
                                 <h2 className="text-[50px] font-bold text-center lg:text-left">Suraya Ahlam</h2>
@@ -75,9 +75,7 @@ const Banner = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     );
 };
