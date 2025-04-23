@@ -14,19 +14,19 @@ const Footer = () => {
                                 href="https://github.com/surayaahlam"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-primary hover:scale-105">
+                                className="text-primary hover:scale-110">
                                 <FaGithub size={25} /></a>
                             <a
                                 href="https://www.linkedin.com/in/surayaahlam/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-primary hover:scale-105">
+                                className="text-primary hover:scale-110">
                                 <FaLinkedinIn size={25} /></a>
                             <a
                                 href="https://discord.com/users/surayaahlam"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-primary hover:scale-105">
+                                className="text-primary hover:scale-110">
                                 <FaDiscord size={25} /></a>
                         </div>
                     </nav>

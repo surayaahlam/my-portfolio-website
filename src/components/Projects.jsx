@@ -4,7 +4,7 @@ const Projects = () => {
     const projects = useLoaderData();
 
     return (
-        <section id="projects" className="container mx-auto py-16 lg:py-20">
+        <section id="projects" className="container mx-auto py-16 lg:py-20 scroll-mt-16 lg:scroll-mt-[90px]">
             <div className="w-11/12 md:w-10/12 lg:w-9/12 mx-auto">
                 <h2 className="text-4xl font-extrabold text-center text-white">
                     My <span className="text-primary">Projects</span>
@@ -22,7 +22,7 @@ const Projects = () => {
 
                             <Link
                                 to={`/projects/${project.id}`}
-                                className="mt-4 block btn bg-primary text-secondary hover:bg-transparent hover:text-primary font-poppins py-2 font-bold text-[15px] border border-primary rounded-md"
+                                className="mt-4 block btn bg-primary text-secondary hover:bg-transparent hover:text-primary font-poppins py-2 font-bold text-[15px] border border-primary rounded-md shadow-none"
                             >
                                 View More
                             </Link>

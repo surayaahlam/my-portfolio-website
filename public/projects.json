@@ -3,6 +3,14 @@
         "id": 1,
         "name": "Rokto Bondhon",
         "description": "A user-friendly Blood Donation Application built with the MERN stack. The platform connects donors with those in need, ensuring a smooth and efficient blood donation process.",
+        "features": [
+            "User Registration & Authentication – Secure login for admin, donors, and volunteers.",
+            "Blood Donation Requests – Users can request blood by specifying their blood group, district, and upazila.",
+            "Donor Management – Admins and volunteers can manage donor profiles efficiently.",
+            "Funding System – Users can donate funds to support the organization (Stripe integration).",
+            "Role-Based Access Control – Different roles: Admin, Volunteer, and Donor.",
+            "Real-time Notifications – Alert users for new requests, approvals, and donations."
+        ],
         "techStack": [
             "React",
             "Firebase",
@@ -29,6 +37,13 @@
         "id": 2,
         "name": "RaceConnect",
         "description": "A comprehensive platform for organizing and managing marathon events. It connects event organizers and participants, allowing streamlined registration, event creation, and dashboard management.",
+        "features": [
+            "Personalized Dashboard – Manage marathon registrations, view applied events, and track updates.",
+            "Real-Time Countdown Timer – Visually engaging timer with dynamic updates.",
+            "Sorting and Filtering Options – Easily sort marathons by date and filter by marathon title.",
+            "Secure Authentication – JWT-based authentication for data security.",
+            "Responsive Design – Optimized for mobile, tablet and desktop users."
+        ],
         "techStack": [
             "React",
             "Firebase",
@@ -54,6 +69,13 @@
         "id": 3,
         "name": "Crowdcube",
         "description": "A dynamic crowdfunding platform designed to help individuals, startups, and creative thinkers turn their ideas into reality by connecting them with supporters.",
+        "features": [
+            "User-Friendly Campaign Management – Create, update, and manage campaigns easily.",
+            "Personalized Dashboards – Track campaigns, donations, and fundraising progress.",
+            "Secure Donation System – Safe transactions with payment integrations.",
+            "Dynamic Theme Options – Switch between light and dark themes.",
+            "Comprehensive Campaign Insights – Showcase details like title, images, donation goals, and deadlines."
+        ],
         "techStack": [
             "React",
             "Tailwind CSS",

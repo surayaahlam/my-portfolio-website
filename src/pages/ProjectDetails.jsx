@@ -71,6 +71,23 @@ const ProjectDetails = () => {
                 {/* Project Description */}
                 <p className="text-gray-300 mt-6">{project.description}</p>
 
+                {/* Features */}
+                {project.features && (
+                    <div className="mt-4">
+                        <ul className="list-disc list-inside text-gray-300 mt-2">
+                            {project.features.map((feature, index) => {
+                                const parts = feature.split(' – ');
+                                return (
+                                    <li key={index}>
+                                        <strong>{parts[0]}</strong>
+                                        {parts[1] ? ` – ${parts[1]}` : ''}
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </div>
+                )}
+
                 {/* Tech Stack */}
                 <h3 className="text-[22px] font-semibold text-primary mt-6">Main Tech Stack</h3>
                 <div className="mt-2 flex flex-wrap gap-2">

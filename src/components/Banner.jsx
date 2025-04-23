@@ -11,7 +11,7 @@ const Banner = () => {
         setDone(true);
     };
     return (
-        <div className="container mx-auto py-24">
+        <div className="container mx-auto py-28">
             <div className="w-11/12 lg:w-10/12 mx-auto">
                 <div className="bg-transparent">
                     <div className="flex flex-col lg:flex-row-reverse gap-16 lg:gap-9 p-1 lg:items-center">
@@ -47,7 +47,7 @@ const Banner = () => {
                                     </span>
                                 </h3>
                             </div>
-                            <div className="flex gap-3 my-6">
+                            <div className="flex gap-4 my-6">
                                 <a
                                     href="https://github.com/surayaahlam"
                                     target="_blank"
@@ -71,7 +71,7 @@ const Banner = () => {
                                 </a>
                             </div>
 
-                            <button className="btn bg-primary text-secondary hover:bg-transparent hover:text-primary font-poppins px-6 py-6 font-bold text-lg border border-primary rounded-md mt-2">Download Resume</button>
+                            <button className="btn bg-primary text-secondary hover:bg-transparent hover:text-primary font-poppins px-6 py-6 font-bold text-lg border border-primary rounded-md mt-2 shadow-none">Download Resume</button>
                         </div>
                     </div>
                 </div>

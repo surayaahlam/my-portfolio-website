@@ -3,19 +3,19 @@ import { FaUniversity } from "react-icons/fa";
 const educationData = [
     {
         id: 1,
-        title: "Master of Science (MS), Computer Science & Engineering (CSE)",
+        title: "Master of Science (MS), Computer Science and Engineering (CSE)",
         specialization: "Data Science",
-        institution: "East West University",
+        institution: "East West University, Dhaka",
         year: "May 2022 - Ongoing",
-        cgpa: "3.79",
+        cgpa: "3.79 / 4.00",
         status: "Ongoing",
     },
     {
         id: 2,
-        title: "Bachelor of Science (BSc), Information & Communication Engineering",
-        institution: "East West University",
+        title: "Bachelor of Science (BSc), Information and Communications Engineering",
+        institution: "East West University, Dhaka",
         year: "2016 - 2020",
-        cgpa: "3.19",
+        cgpa: "3.19 / 4.00",
         status: "Completed",
     },
     {
@@ -23,14 +23,14 @@ const educationData = [
         title: "Higher Secondary Certificate (HSC), Science",
         institution: "Bangladesh International School & College, Jeddah",
         year: "2015",
-        cgpa: "4.50",
+        cgpa: "4.50 / 5.00",
         status: "Completed",
     },
 ];
 
 const Education = () => {
     return (
-        <section id="education" className="container mx-auto py-16 lg:py-20">
+        <section id="education" className="container mx-auto py-16 lg:py-20 scroll-mt-14">
             <div className="w-11/12 md:w-10/12 lg:w-8/12 mx-auto">
                 <h2 className="text-[42px] font-extrabold text-center text-white">
                     Educational <span className="text-primary">Qualification</span>
@@ -46,14 +46,14 @@ const Education = () => {
                                 <div>
                                     <h3 className="text-xl font-semibold text-white">{edu.title}</h3>
                                     {edu.specialization && (
-                                        <p className="text-sm text-gray-400"><strong className="text-gray-300">Major: </strong>{edu.specialization}</p>
+                                        <p className="text-base mb-1 text-gray-400"><strong className="text-gray-300">Major: </strong>{edu.specialization}</p>
                                     )}
                                     <p className="text-gray-400">{edu.institution}</p>
                                     <p className="text-gray-500">{edu.year}</p>
                                     {edu.id === 3 ?
-                                        <p className="text-gray-300 font-semibold">GPA: {edu.cgpa}</p>
+                                        <p className="text-gray-300 font-medium"><strong>GPA:</strong> {edu.cgpa}</p>
                                         :
-                                        <p className="text-gray-300 font-semibold">CGPA: {edu.cgpa}</p>
+                                        <p className="text-gray-300 font-medium"><strong>CGPA:</strong> {edu.cgpa}</p>
                                     }
                                 </div>
                             </div>

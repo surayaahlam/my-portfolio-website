@@ -2,7 +2,7 @@ import { FaEnvelope, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
     return (
-        <section className="bg-contact_img bg-cover py-16 lg:py-20">
+        <section id="contact" className="bg-contact_img bg-cover py-16 lg:py-20 scroll-mt-14">
             <div className="container mx-auto">
                 <div className="w-11/12 lg:w-10/12 mx-auto">
                     <h2 className="text-[42px] font-extrabold text-center mb-8">Contact Me</h2>

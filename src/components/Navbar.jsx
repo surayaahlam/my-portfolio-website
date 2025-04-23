@@ -1,19 +1,65 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import logoImg from "../assets/logo.png";
 import { FaBars } from "react-icons/fa";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+    const [activeSection, setActiveSection] = useState("");
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const sectionIds = ["about", "skills", "education", "projects", "contact"];
+        const sections = sectionIds.map((id) => document.getElementById(id));
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setActiveSection(entry.target.id);
+                    }
+                });
+            },
+            {
+                threshold: 0.6, // Adjust this to make activation more or less sensitive
+            }
+        );
+
+        sections.forEach((section) => {
+            if (section) observer.observe(section);
+        });
+
+        return () => {
+            sections.forEach((section) => {
+                if (section) observer.unobserve(section);
+            });
+        };
+    }, []);
+
+    const getLinkClass = (id) =>
+        `text-base transition duration-200 ${activeSection === id ? "font-bold text-primary" : "hover:scale-105"}`;
+
     const links = <>
-        <NavLink
+        {/* <NavLink
             to="/"
-            className={({ isActive }) => `text-[15px] ${isActive ? "font-bold text-primary" : "hover:scale-110"}`}
+            className={({ isActive }) => `text-base ${isActive ? "font-bold text-primary" : "hover:scale-110"}`}
         >
             Home
-        </NavLink>
-        <a href="#about" className="text-[15px] hover:scale-110">About Me</a>
-        <a href="#skills" className="text-[15px] hover:scale-110">Skills</a>
-        <a href="#projects" className="text-[15px] hover:scale-110">Projects</a>
-        <a href="#contact" className="text-[15px] hover:scale-110">Contact Me</a>
+        </NavLink> */}
+        <a href="#about" className={getLinkClass("about")}>
+            About Me
+        </a>
+        <a href="#skills" className={getLinkClass("skills")}>
+            Skills
+        </a>
+        <a href="#education" className={getLinkClass("education")}>
+            Education
+        </a>
+        <a href="#projects" className={getLinkClass("projects")}>
+            Projects
+        </a>
+        <a href="#contact" className={getLinkClass("contact")}>
+            Contact Me
+        </a>
     </>
 
     return (
@@ -27,11 +73,11 @@ const Navbar = () => {
                             </div>
                             <ul
                                 tabIndex={0}
-                                className="menu menu-sm dropdown-content rounded-box z-10 mt-3 w-48 p-3 shadow bg-footer">
+                                className="menu menu-sm dropdown-content rounded-box z-10 mt-3 w-48 p-3 shadow bg-gray-800">
                                 {links}
                             </ul>
                         </div>
-                        <img className="w-[70px]" src={logoImg} alt="logo" />
+                        <img onClick={() => navigate("/")} className="w-[70px] cursor-pointer" src={logoImg} alt="logo" />
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1 flex gap-5 font-medium">
@@ -39,7 +85,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <button className="btn bg-primary text-secondary hover:bg-transparent hover:text-primary font-poppins px-6 font-bold text-[15px] border border-primary rounded-md">Resume</button>
+                        <button className="btn bg-primary text-secondary hover:bg-transparent hover:text-primary font-poppins px-6 font-bold text-base border border-primary rounded-md shadow-none">Resume</button>
                     </div>
                 </div>
 
