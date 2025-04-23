@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Rokto Bondhon",
+        "name": "Rokto Bondhon – Blood Donation Platform",
         "description": "A user-friendly Blood Donation Application built with the MERN stack. The platform connects donors with those in need, ensuring a smooth and efficient blood donation process.",
         "features": [
             "User Registration & Authentication – Secure login for admin, donors, and volunteers.",
@@ -35,7 +35,7 @@
     },
     {
         "id": 2,
-        "name": "RaceConnect",
+        "name": "RaceConnect – Marathon Management System",
         "description": "A comprehensive platform for organizing and managing marathon events. It connects event organizers and participants, allowing streamlined registration, event creation, and dashboard management.",
         "features": [
             "Personalized Dashboard – Manage marathon registrations, view applied events, and track updates.",
@@ -67,7 +67,7 @@
     },
     {
         "id": 3,
-        "name": "Crowdcube",
+        "name": "Crowdcube – Crowd Funding Platform",
         "description": "A dynamic crowdfunding platform designed to help individuals, startups, and creative thinkers turn their ideas into reality by connecting them with supporters.",
         "features": [
             "User-Friendly Campaign Management – Create, update, and manage campaigns easily.",

@@ -11,7 +11,7 @@ const Banner = () => {
         setDone(true);
     };
     return (
-        <div className="container mx-auto py-28">
+        <div id="banner" className="container mx-auto py-28">
             <div className="w-11/12 lg:w-10/12 mx-auto">
                 <div className="bg-transparent">
                     <div className="flex flex-col lg:flex-row-reverse gap-16 lg:gap-9 p-1 lg:items-center">
@@ -52,26 +52,26 @@ const Banner = () => {
                                     href="https://github.com/surayaahlam"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="w-12 h-12 border-2 border-primary text-primary rounded-full bg-transparent flex items-center justify-center hover:scale-95">
+                                    className="w-12 h-12 border-2 border-primary text-primary rounded-full bg-transparent flex items-center justify-center hover:scale-95 hover:shadow-xl hover:shadow-[#0cbfdf61]">
                                     <FaGithub size={25} />
                                 </a>
                                 <a
                                     href="https://www.linkedin.com/in/surayaahlam/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="w-12 h-12 border-2 border-primary text-primary rounded-full bg-transparent flex items-center justify-center hover:scale-95">
+                                    className="w-12 h-12 border-2 border-primary text-primary rounded-full bg-transparent flex items-center justify-center hover:scale-95 hover:shadow-xl hover:shadow-[#0cbfdf61]">
                                     <FaLinkedinIn size={25} />
                                 </a>
                                 <a
                                     href="https://discord.com/users/surayaahlam"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="w-12 h-12 border-2 border-primary text-primary rounded-full bg-transparent flex items-center justify-center hover:scale-95">
+                                    className="w-12 h-12 border-2 border-primary text-primary rounded-full bg-transparent flex items-center justify-center hover:scale-95 hover:shadow-xl hover:shadow-[#0cbfdf61]">
                                     <FaDiscord size={25} />
                                 </a>
                             </div>
 
-                            <button className="btn bg-primary text-secondary hover:bg-transparent hover:text-primary font-poppins px-6 py-6 font-bold text-lg border border-primary rounded-md mt-2 shadow-none">Download Resume</button>
+                            <button className="btn bg-primary text-secondary hover:bg-transparent hover:text-primary font-poppins px-6 py-6 font-bold text-lg border border-primary rounded-md mt-2 shadow-none hover:shadow-xl hover:shadow-[#0cbfdf61]">Download Resume</button>
                         </div>
                     </div>
                 </div>

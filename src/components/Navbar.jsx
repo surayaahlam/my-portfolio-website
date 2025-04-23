@@ -1,14 +1,12 @@
-import { NavLink, useNavigate } from "react-router-dom";
 import logoImg from "../assets/logo.png";
 import { FaBars } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
     const [activeSection, setActiveSection] = useState("");
-    const navigate = useNavigate();
 
     useEffect(() => {
-        const sectionIds = ["about", "skills", "education", "projects", "contact"];
+        const sectionIds = ["banner", "about", "skills", "education", "projects", "contact"];
         const sections = sectionIds.map((id) => document.getElementById(id));
 
         const observer = new IntersectionObserver(
@@ -77,7 +75,7 @@ const Navbar = () => {
                                 {links}
                             </ul>
                         </div>
-                        <img onClick={() => navigate("/")} className="w-[70px] cursor-pointer" src={logoImg} alt="logo" />
+                        <img className="w-[70px]" src={logoImg} alt="logo" />
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1 flex gap-5 font-medium">
@@ -85,7 +83,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <button className="btn bg-primary text-secondary hover:bg-transparent hover:text-primary font-poppins px-6 font-bold text-base border border-primary rounded-md shadow-none">Resume</button>
+                        <button className="btn bg-primary text-secondary hover:bg-transparent hover:text-primary font-poppins px-6 font-bold text-base border border-primary rounded-md shadow-none hover:shadow-lg hover:shadow-[#0cbfdf61]">Resume</button>
                     </div>
                 </div>
 
