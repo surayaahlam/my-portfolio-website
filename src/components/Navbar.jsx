@@ -5,6 +5,13 @@ import { useEffect, useState } from "react";
 const Navbar = () => {
     const [activeSection, setActiveSection] = useState("");
 
+    const handleResume = () => {
+        window.open(
+            "https://drive.google.com/file/d/1JLAO-AapITsV4P6O14HH_AbFSbTgGhb4/view?usp=sharing",
+            "_blank"
+        );
+    };
+
     useEffect(() => {
         const sectionIds = ["banner", "about", "skills", "education", "projects", "contact"];
         const sections = sectionIds.map((id) => document.getElementById(id));
@@ -83,7 +90,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <button className="btn bg-primary text-secondary hover:bg-transparent hover:text-primary font-poppins px-6 font-bold text-base border border-primary rounded-md shadow-none hover:shadow-lg hover:shadow-[#0cbfdf61]">Resume</button>
+                        <button onClick={handleResume} className="btn bg-primary text-secondary hover:bg-transparent hover:text-primary font-poppins px-6 font-bold text-base border border-primary rounded-md shadow-none hover:shadow-lg hover:shadow-[#0cbfdf61]">Resume</button>
                     </div>
                 </div>
 

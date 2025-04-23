@@ -10,6 +10,13 @@ const Banner = () => {
     const handleDone = () => {
         setDone(true);
     };
+
+    const handleDownload = () => {
+        window.open(
+            "https://drive.google.com/uc?export=download&id=1JLAO-AapITsV4P6O14HH_AbFSbTgGhb4"
+        );
+    };
+
     return (
         <div id="banner" className="container mx-auto py-28">
             <div className="w-11/12 lg:w-10/12 mx-auto">
@@ -71,7 +78,7 @@ const Banner = () => {
                                 </a>
                             </div>
 
-                            <button className="btn bg-primary text-secondary hover:bg-transparent hover:text-primary font-poppins px-6 py-6 font-bold text-lg border border-primary rounded-md mt-2 shadow-none hover:shadow-xl hover:shadow-[#0cbfdf61]">Download Resume</button>
+                            <button onClick={handleDownload} className="btn bg-primary text-secondary hover:bg-transparent hover:text-primary font-poppins px-6 py-6 font-bold text-lg border border-primary rounded-md mt-2 shadow-none hover:shadow-xl hover:shadow-[#0cbfdf61]">Download Resume</button>
                         </div>
                     </div>
                 </div>
