@@ -9,7 +9,7 @@
             "Donor Management – Admins and volunteers can manage donor profiles efficiently.",
             "Funding System – Users can donate funds to support the organization (Stripe integration).",
             "Role-Based Access Control – Different roles: Admin, Volunteer, and Donor.",
-            "Real-time Notifications – Alert users for new requests, approvals, and donations."
+            "Interactive Alerts – Notify users with toast messages and alerts for requests, approvals, and donations."
         ],
         "techStack": [
             "React",
@@ -24,13 +24,13 @@
         "image": "https://i.ibb.co.com/3YYZTCKC/image.png",
         "challenges": [
             "Implementing role-based access control with different permissions.",
-            "Managing real-time notifications efficiently for blood donation requests.",
+            "Displaying dynamic dashboard data such as total users, funding amounts, and blood donation requests for Admin and Volunteers.",
             "Ensuring secure authentication and data protection."
         ],
         "futurePlans": [
-            "Enhancing the donor search functionality with AI-based recommendations.",
+            "Building a dynamic 'Emergency Blood Needed' feature where users can post urgent blood requirements.",
             "Adding multilingual support to make the platform accessible to a wider audience.",
-            "Implementing an AI-based chatbot for quick assistance."
+            "Add an AI-powered chatbot for instant assistance and engagement."
         ]
     },
     {
@@ -62,7 +62,7 @@
         "futurePlans": [
             "Integrating live tracking for marathon participants.",
             "Adding a forum section for runners to share their experiences.",
-            "Optimizing the platform for global marathon events."
+            "Implementing a reward and achievement system to motivate participants."
         ]
     },
     {
@@ -72,7 +72,7 @@
         "features": [
             "User-Friendly Campaign Management – Create, update, and manage campaigns easily.",
             "Personalized Dashboards – Track campaigns, donations, and fundraising progress.",
-            "Secure Donation System – Safe transactions with payment integrations.",
+            "Sort by Minimum Donation – A button on the all campaigns page to sort campaigns based on their minimum donation amount.",
             "Dynamic Theme Options – Switch between light and dark themes.",
             "Comprehensive Campaign Insights – Showcase details like title, images, donation goals, and deadlines."
         ],
@@ -86,7 +86,7 @@
         "githubRepository": "https://github.com/surayaahlam/crowdcube-crowd-funding-a10-ph-client",
         "image": "https://i.ibb.co.com/YBy28hxn/image.png",
         "challenges": [
-            "Ensuring secure and smooth transactions for donations.",
+            "Designing a responsive and accessible theme toggle system.",
             "Managing real-time campaign updates dynamically.",
             "Implementing a responsive theme toggle feature."
         ],
@@ -94,6 +94,103 @@
             "Introducing social media sharing options for campaigns.",
             "Adding a reward-based system for donors.",
             "Expanding campaign categories for more diverse funding opportunities."
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Winter Donation – Winter Clothing Donation Platform",
+        "description": "A platform for collecting and distributing winter clothing in Bangladesh, enabling individuals and organizations to donate and support those in need during colder months.",
+        "features": [
+            "User Authentication – Secure login and registration for users.",
+            "Campaigns – Users can view and donate to various winter clothing campaigns.",
+            "Responsive Design – Fully responsive, mobile-first design for accessibility.",
+            "Animations – Beautiful animations using animate.css and on-scroll effects powered by react-intersection-observer to enhance user experience."
+        ],
+        "techStack": [
+            "React",
+            "Tailwind CSS",
+            "Animate.css",
+            "Firebase",
+            "DaisyUI"
+        ],
+        "liveProjectLink": "https://winter-donation-ph-b10a9-surayaahlam.netlify.app/",
+        "githubRepository": "https://github.com/surayaahlam/winter-clothing-donation-a9-ph",
+        "image": "https://i.ibb.co/rR0nGtDH/Winter-Donation.jpg",
+        "challenges": [
+            "Implementing smooth and performant animations that work well across devices using animate.css and react-intersection-observer.",
+            "Ensuring responsive design with mobile-first approach for a seamless user experience on all screen sizes.",
+            "Integrating Firebase Authentication securely and handling user sessions effectively.",
+            "Overcoming design challenges related to color schemes and overall site aesthetics to create an appealing user interface."
+        ],
+        "futurePlans": [
+            "Integrate backend services to support real-time campaign data and user donations.",
+            "Add multilingual support to reach a wider audience.",
+            "Implement donation tracking and user dashboards for better engagement.",
+            "Enhance accessibility compliance to ensure the platform is usable by everyone."
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Gadget Heaven – E-commerce Platform",
+        "description": "A frontend e-commerce platform for buying gadgets, featuring cart and wishlist. Built using React and Context API with data persistence via localStorage.",
+        "features": [
+            "Product Browsing – Explore gadgets with detailed information.",
+            "Cart Management – Add items to cart and track total cost.",
+            "Wishlist – Save favorite gadgets and easily move them to cart.",
+            "Real-Time Stock Updates – Instantly see product availability.",
+            "Purchase Confirmation – Modal displays success message and clears cart."
+        ],
+        "techStack": [
+            "React",
+            "Tailwind CSS",
+            "React Router",
+            "React Toastify",
+            "Recharts"
+        ],
+        "liveProjectLink": "https://gadget-heaven-ph-b10a8-surayaahlam.netlify.app/",
+        "githubRepository": "https://github.com/surayaahlam/gadget-heaven-a8-ph",
+        "image": "https://i.ibb.co/yD2bdwx/Gadget-Heaven.jpg",
+        "challenges": [
+            "Managing global state efficiently using Context API across multiple components.",
+            "Implementing persistent cart and wishlist functionalities with localStorage.",
+            "Designing responsive UI for various devices while maintaining visual consistency."
+        ],
+        "futurePlans": [
+            "Integrate payment gateway for real-time purchases.",
+            "Add user authentication for personalized experience.",
+            "Implement product filtering and sorting for better usability."
+        ]
+    },
+    {
+        "id": 6,
+        "name": "BPL-DREAM 11 – Select Your Dream XI!",
+        "description": "A frontend cricket team management app where users build their dream BPL XI while staying within budget and player constraints. Built with React and Tailwind CSS.",
+        "features": [
+            "Player Selection – Pick players across categories with budget and team limits.",
+            "Dynamic Feedback – Toast notifications for selections, removals, and warnings.",
+            "Budget Tracking – Real-time updates on budget usage.",
+            "Responsive UI – Fully responsive design for all devices.",
+            "Interactive UX – Immediate visual feedback on user actions."
+        ],
+        "techStack": [
+            "React",
+            "Tailwind CSS",
+            "DaisyUI",
+            "React Toastify",
+            "PropTypes"
+        ],
+        "liveProjectLink": "https://bpl-dream11-ph-b10a7-surayaahlam.netlify.app/",
+        "githubRepository": "https://github.com/surayaahlam/bpl-dream-11-a7-ph",
+        "image": "https://i.ibb.co/SwZKGY55/BPL-DREAM-11.jpg",
+        "challenges": [
+            "Ensuring accurate real-time budget calculation during team selection.",
+            "Designing a user-friendly layout for managing team constraints.",
+            "Maintaining responsiveness and consistency across device sizes."
+        ],
+        "futurePlans": [
+            "Add player performance stats and live updates.",
+            "Introduce user login and save team progress.",
+            "Enable team sharing or competition among users."
         ]
     }
 ]

@@ -5,6 +5,7 @@ import { ImCross } from "react-icons/im";
 const Projects = () => {
     const projects = useLoaderData();
     const [selectedProject, setSelectedProject] = useState(null);
+    const [showAll, setShowAll] = useState(false);
 
     const techColors = {
         "React": "text-blue-400",
@@ -14,7 +15,12 @@ const Projects = () => {
         "Nodejs": "text-green-500",
         "Expressjs": "text-red-500",
         "Stripe": "text-purple-400",
-        "DaisyUI": "text-pink-400"
+        "DaisyUI": "text-pink-400",
+        "Animate.css": "text-orange-500",
+        "Recharts": "text-lime-500",
+        "React Router": "text-purple-500",
+        "React Toastify": "text-fuchsia-700",
+        "PropTypes": "text-rose-400"
     };
 
     const openProjectModal = (project) => {
@@ -30,13 +36,13 @@ const Projects = () => {
     };
 
     return (
-        <section id="projects" className="container mx-auto py-16 lg:py-20 scroll-mt-16 lg:scroll-mt-[90px]">
+        <section id="projects" className="container mx-auto py-16 lg:py-20 scroll-mt-16">
             <div className="w-11/12 md:w-10/12 lg:w-9/12 mx-auto">
                 <h2 className="text-4xl font-extrabold text-center text-white">
                     My <span className="text-primary">Projects</span>
                 </h2>
                 <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {projects.map((project) => (
+                    {(showAll ? projects : projects.slice(0, 3)).map((project) => (
                         <div key={project.id} className="bg-gray-800 p-6 rounded-xl shadow-lg">
                             <img
                                 src={project.image}
@@ -50,16 +56,27 @@ const Projects = () => {
                                 onClick={() => openProjectModal(project)}
                                 className="mt-4 block btn bg-primary text-secondary hover:bg-transparent hover:text-primary font-poppins py-2 font-bold text-[15px] border border-primary rounded-md shadow-none hover:shadow-lg hover:shadow-[#0cbfdf61]"
                             >
-                                View More
+                                View Details
                             </button>
                         </div>
                     ))}
                 </div>
+
+                {!showAll && projects.length > 3 && (
+                    <div className="mt-8 text-center">
+                        <button
+                            onClick={() => setShowAll(true)}
+                            className="btn bg-primary text-secondary hover:bg-transparent hover:text-primary font-poppins px-6 py-6 font-bold text-lg border border-primary rounded-md mt-2 shadow-none hover:shadow-xl hover:shadow-[#0cbfdf61]"
+                        >
+                            View More Projects
+                        </button>
+                    </div>
+                )}
             </div>
 
             {selectedProject && (
                 <dialog id="viewProject" className="modal">
-                    <div className="modal-box w-11/12 max-w-5xl bg-gray-800 max-h-[91.666667%]">
+                    <div className="modal-box w-11/12 mr-4 md:mr-0 max-w-5xl bg-gray-800 max-h-[91.666667%]">
                         <div className="flex justify-end">
                             <button
                                 type="button"

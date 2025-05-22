@@ -18,16 +18,16 @@ const Banner = () => {
     };
 
     return (
-        <div id="banner" className="container mx-auto py-28">
+        <div id="banner" className="container mx-auto py-20 md:py-28">
             <div className="w-11/12 lg:w-10/12 mx-auto">
                 <div className="bg-transparent">
                     <div className="flex flex-col lg:flex-row-reverse gap-16 lg:gap-9 p-1 lg:items-center">
                         <div className="lg:w-[45%] flex justify-center items-center lg:pl-10">
                             <div className="relative">
-                                <PiDevToLogoLight className="text-primary absolute -left-[80px] -bottom-[40px]" size={50} />
-                                <PiCodeLight className="text-primary absolute -right-[55px] -top-[55px]" size={50} />
-                                <img className="w-[350px] rounded-2xl border-[6px] border-secondary absolute -left-6 bottom-6" src={bannerImg} alt="" />
-                                <div className="w-[350px] rounded-2xl h-[350px] bg-primary"></div>
+                                <PiDevToLogoLight className="text-primary absolute -left-[50px] md:-left-[80px] -bottom-[60px] md:-bottom-[40px]" size={50} />
+                                <PiCodeLight className="text-primary absolute -right-[40px] md:-right-[55px] -top-[70px] md:-top-[55px]" size={50} />
+                                <img className="w-72 md:w-[350px] rounded-xl md:rounded-2xl border-[6px] border-secondary absolute -left-4 bottom-4 md:-left-6 md:bottom-6" src={bannerImg} alt="" />
+                                <div className="w-72 h-72 md:w-[350px] md:h-[350px] rounded-xl md:rounded-2xl bg-primary"></div>
                             </div>
                         </div>
                         <div className="flex flex-col items-center lg:items-start lg:w-[55%]">
