@@ -33,9 +33,11 @@ const AboutMe = () => {
 
                         <h3 className="text-2xl font-semibold text-primary mb-3 mt-6 lg:mt-8">🌟 What’s Next?</h3>
                         <p className="text-gray-300">
-                            The tech world never stops evolving, and neither do I! Whether it’s learning a new framework,
-                            exploring performance optimizations, or contributing to open-source projects, I’m always looking
-                            for ways to grow. My goal is to build innovative web solutions that <strong>enhance user experiences</strong> and solve real-world problems.
+                            The tech world never stops evolving, and neither do I! I’m currently expanding my skills by 
+                            learning <strong className="text-primary">Next.js</strong>, <strong className="text-primary">TypeScript</strong>, and <strong className="text-primary">AI integration</strong> to 
+                            build modern, scalable, and intelligent web applications. Whether it’s mastering new frameworks, optimizing 
+                            performance, or contributing to open-source projects, I’m always eager to grow and create innovative solutions that 
+                            <strong>enhance user experiences</strong> and solve real-world problems.
                         </p>
                     </div>
                 </div>

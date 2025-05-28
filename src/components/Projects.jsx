@@ -66,7 +66,7 @@ const Projects = () => {
                     <div className="mt-8 text-center">
                         <button
                             onClick={() => setShowAll(true)}
-                            className="btn bg-primary text-secondary hover:bg-transparent hover:text-primary font-poppins px-6 py-6 font-bold text-lg border border-primary rounded-md mt-2 shadow-none hover:shadow-xl hover:shadow-[#0cbfdf61]"
+                            className="btn bg-gray-800 hover:bg-transparent text-primary font-poppins px-6 py-6 font-bold text-lg border border-primary rounded-lg mt-2 shadow-none hover:shadow-xl hover:shadow-[#0cbfdf61]"
                         >
                             View More Projects
                         </button>
@@ -76,7 +76,7 @@ const Projects = () => {
 
             {selectedProject && (
                 <dialog id="viewProject" className="modal">
-                    <div className="modal-box w-11/12 mr-4 md:mr-0 max-w-5xl bg-gray-800 max-h-[91.666667%]">
+                    <div className="modal-box w-11/12 mr-2 md:mr-0 max-w-5xl bg-gray-800 max-h-[91.666667%]">
                         <div className="flex justify-end">
                             <button
                                 type="button"
