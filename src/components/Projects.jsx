@@ -62,13 +62,13 @@ const Projects = () => {
                     ))}
                 </div>
 
-                {!showAll && projects.length > 3 && (
+                {projects.length > 3 && (
                     <div className="mt-8 text-center">
                         <button
-                            onClick={() => setShowAll(true)}
-                            className="btn bg-gray-800 hover:bg-transparent text-primary font-poppins px-6 py-6 font-bold text-lg border border-primary rounded-lg mt-2 shadow-none hover:shadow-xl hover:shadow-[#0cbfdf61]"
+                            onClick={() => setShowAll(!showAll)}
+                            className="btn bg-transparent hover:bg-transparent text-primary font-poppins px-6 py-6 font-semibold text-lg border border-primary rounded-lg mt-2 shadow-none hover:shadow-xl hover:shadow-[#0cbfdf61]"
                         >
-                            View More Projects
+                            {showAll ? "View Less" : "View More"}
                         </button>
                     </div>
                 )}

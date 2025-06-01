@@ -19,7 +19,7 @@ const Skills = () => {
                 <h2 className="text-[42px] font-extrabold text-white text-center mb-8">
                     My <span className="text-primary">Stack</span>
                 </h2>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {skills.map((skill, index) => (
                         <div
                             key={index}

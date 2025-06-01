@@ -31,7 +31,7 @@ const Contact = () => {
                                 className="w-full bg-gray-800 text-gray-300 p-3 rounded-md h-32 mb-4"
                             ></textarea>
 
-                            <button className="bg-primary text-secondary hover:bg-transparent hover:text-primary border border-primary font-poppins px-6 py-2 rounded-md font-semibold transition hover:shadow-lg hover:shadow-[#0cbfdf61]">
+                            <button className="bg-primary text-secondary hover:bg-transparent hover:text-primary border border-primary font-poppins px-8 md:px-10 py-2 rounded-md font-semibold transition hover:shadow-lg hover:shadow-[#0cbfdf61]">
                                 Send
                             </button>
                         </div>
